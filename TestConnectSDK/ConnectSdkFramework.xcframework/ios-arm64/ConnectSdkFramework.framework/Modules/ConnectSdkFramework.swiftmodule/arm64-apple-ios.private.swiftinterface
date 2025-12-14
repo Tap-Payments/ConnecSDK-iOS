@@ -1,0 +1,30 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target arm64-apple-ios26.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name ConnectSdkFramework
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+import Foundation
+@_exported import ReactBrownfield
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol NativeCommunicationDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc func requestDataSync() -> Swift.String?
+  #endif
+  @objc func handleEventFromReactNative(_ data: Swift.String)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class NativeCommunicationService : ObjectiveC.NSObject {
+  @objc public static let shared: ConnectSdkFramework.NativeCommunicationService
+  @objc weak public var delegate: (any ConnectSdkFramework.NativeCommunicationDelegate)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func requestDataSync() -> Swift.String?
+  #endif
+  @objc public func handleEventFromReactNative(_ data: Swift.String)
+  @objc public func sendEventToReactNative(_ eventData: [Swift.String : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func sendEvent(type: Swift.String, payload: [Swift.String : Any]? = nil)
+  #endif
+  @objc deinit
+}
+public let ReactNativeBundle: Foundation.Bundle

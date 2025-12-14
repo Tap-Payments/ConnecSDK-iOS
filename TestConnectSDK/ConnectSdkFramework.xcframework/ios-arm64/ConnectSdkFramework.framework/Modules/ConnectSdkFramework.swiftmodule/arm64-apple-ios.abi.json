@@ -1,0 +1,530 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "ConnectSdkFramework",
+    "printedName": "ConnectSdkFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "ConnectSdkFramework",
+        "declAttributes": ["RawDocComment"]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NativeCommunicationDelegate",
+        "printedName": "NativeCommunicationDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "requestDataSync",
+            "printedName": "requestDataSync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ConnectSdkFramework@objc(pl)NativeCommunicationDelegate(im)requestDataSync",
+            "mangledName": "$s19ConnectSdkFramework27NativeCommunicationDelegateP15requestDataSyncSSSgyF",
+            "moduleName": "ConnectSdkFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ConnectSdkFramework.NativeCommunicationDelegate>",
+            "sugared_genericSig": "<Self where Self : ConnectSdkFramework.NativeCommunicationDelegate>",
+            "protocolReq": true,
+            "declAttributes": ["ObjC", "RawDocComment"],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleEventFromReactNative",
+            "printedName": "handleEventFromReactNative(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ConnectSdkFramework@objc(pl)NativeCommunicationDelegate(im)handleEventFromReactNative:",
+            "mangledName": "$s19ConnectSdkFramework27NativeCommunicationDelegateP020handleEventFromReactD0yySSF",
+            "moduleName": "ConnectSdkFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : ConnectSdkFramework.NativeCommunicationDelegate>",
+            "sugared_genericSig": "<Self where Self : ConnectSdkFramework.NativeCommunicationDelegate>",
+            "protocolReq": true,
+            "declAttributes": ["ObjC", "RawDocComment"],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@ConnectSdkFramework@objc(pl)NativeCommunicationDelegate",
+        "mangledName": "$s19ConnectSdkFramework27NativeCommunicationDelegateP",
+        "moduleName": "ConnectSdkFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": ["AccessControl", "ObjC", "RawDocComment"],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NativeCommunicationService",
+        "printedName": "NativeCommunicationService",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NativeCommunicationService",
+                "printedName": "ConnectSdkFramework.NativeCommunicationService",
+                "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(cpy)shared",
+            "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC6sharedACvpZ",
+            "moduleName": "ConnectSdkFramework",
+            "static": true,
+            "declAttributes": ["HasInitialValue", "Final", "HasStorage", "AccessControl", "ObjC"],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NativeCommunicationService",
+                    "printedName": "ConnectSdkFramework.NativeCommunicationService",
+                    "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(cm)shared",
+                "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC6sharedACvgZ",
+                "moduleName": "ConnectSdkFramework",
+                "static": true,
+                "implicit": true,
+                "declAttributes": ["Final", "ObjC"],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any ConnectSdkFramework.NativeCommunicationDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(py)delegate",
+            "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC8delegateAA0dE8Delegate_pSgvp",
+            "moduleName": "ConnectSdkFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ConnectSdkFramework.NativeCommunicationDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NativeCommunicationDelegate",
+                        "printedName": "any ConnectSdkFramework.NativeCommunicationDelegate",
+                        "usr": "c:@M@ConnectSdkFramework@objc(pl)NativeCommunicationDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(im)delegate",
+                "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC8delegateAA0dE8Delegate_pSgvg",
+                "moduleName": "ConnectSdkFramework",
+                "implicit": true,
+                "declAttributes": ["ObjC"],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any ConnectSdkFramework.NativeCommunicationDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NativeCommunicationDelegate",
+                        "printedName": "any ConnectSdkFramework.NativeCommunicationDelegate",
+                        "usr": "c:@M@ConnectSdkFramework@objc(pl)NativeCommunicationDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(im)setDelegate:",
+                "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC8delegateAA0dE8Delegate_pSgvs",
+                "moduleName": "ConnectSdkFramework",
+                "implicit": true,
+                "declAttributes": ["ObjC"],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19ConnectSdkFramework26NativeCommunicationServiceC8delegateAA0dE8Delegate_pSgvM",
+                "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC8delegateAA0dE8Delegate_pSgvM",
+                "moduleName": "ConnectSdkFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "requestDataSync",
+            "printedName": "requestDataSync()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(im)requestDataSync",
+            "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC15requestDataSyncSSSgyF",
+            "moduleName": "ConnectSdkFramework",
+            "declAttributes": ["AccessControl", "ObjC", "RawDocComment"],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "handleEventFromReactNative",
+            "printedName": "handleEventFromReactNative(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(im)handleEventFromReactNative:",
+            "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC020handleEventFromReactD0yySSF",
+            "moduleName": "ConnectSdkFramework",
+            "declAttributes": ["AccessControl", "ObjC", "RawDocComment"],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendEventToReactNative",
+            "printedName": "sendEventToReactNative(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(im)sendEventToReactNative:",
+            "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC016sendEventToReactD0yySDySSypGF",
+            "moduleName": "ConnectSdkFramework",
+            "declAttributes": ["AccessControl", "ObjC", "RawDocComment"],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendEvent",
+            "printedName": "sendEvent(type:payload:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService(im)sendEventWithType:payload:",
+            "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC9sendEvent4type7payloadySS_SDySSypGSgtF",
+            "moduleName": "ConnectSdkFramework",
+            "objc_name": "sendEventWithType:payload:",
+            "declAttributes": ["AccessControl", "ObjC", "RawDocComment"],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@ConnectSdkFramework@objc(cs)NativeCommunicationService",
+        "mangledName": "$s19ConnectSdkFramework26NativeCommunicationServiceC",
+        "moduleName": "ConnectSdkFramework",
+        "declAttributes": ["AccessControl", "ObjC", "RawDocComment"],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": ["ObjectiveC.NSObject"],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ReactBrownfield",
+        "printedName": "ReactBrownfield",
+        "declKind": "Import",
+        "moduleName": "ConnectSdkFramework",
+        "declAttributes": ["Exported", "RawDocComment"]
+      },
+      {
+        "kind": "Var",
+        "name": "ReactNativeBundle",
+        "printedName": "ReactNativeBundle",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Bundle",
+            "printedName": "Foundation.Bundle",
+            "usr": "c:objc(cs)NSBundle"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:19ConnectSdkFramework17ReactNativeBundleSo8NSBundleCvp",
+        "mangledName": "$s19ConnectSdkFramework17ReactNativeBundleSo8NSBundleCvp",
+        "moduleName": "ConnectSdkFramework",
+        "declAttributes": ["HasInitialValue", "HasStorage", "AccessControl", "RawDocComment"],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bundle",
+                "printedName": "Foundation.Bundle",
+                "usr": "c:objc(cs)NSBundle"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:19ConnectSdkFramework17ReactNativeBundleSo8NSBundleCvg",
+            "mangledName": "$s19ConnectSdkFramework17ReactNativeBundleSo8NSBundleCvg",
+            "moduleName": "ConnectSdkFramework",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
