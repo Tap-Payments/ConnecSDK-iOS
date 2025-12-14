@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
                        TapConnectSDK provides a seamless way to integrate Tap Connect functionality into your iOS application.
                        It wraps a React Native implementation with a simple Swift API.
                        DESC
-  s.homepage         = 'https://github.com/yourusername/TapConnectSDK'
+  s.homepage         = 'https://github.com/Tap-Payments/ConnecSDK-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tap Payments' => 'developer@tap.company' }
-  s.source           = { :git => 'https://github.com/yourusername/TapConnectSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/Tap-Payments/ConnecSDK-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
